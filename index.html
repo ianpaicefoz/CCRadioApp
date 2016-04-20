@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>::: CCRadioApp :::</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="lib/jquery-1.6.4.js"></script>
+	<script src="lib/jquery.mobile-1.1.0.js"></script>
+	<script type="text/javascript" src="src/js/script.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<link href="src/css/style.css" rel="stylesheet"/>
+	<link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet"/>
+	<link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet" />
+</head>
+
+<script type="text/javascript" charset="utf-8"> 
+document.addEventListener("deviceready", onDeviceReady, false);
+
+// PhoneGap is loaded and it is now safe to make calls PhoneGap methods
+function onDeviceReady() {
+    // Register the event listener
+    document.addEventListener("backbutton", onBackKeyDown, false);
+}
+
+// Handle the back button
+function onBackKeyDown() {
+         //Your backbutton code
+		navigator.app.exitApp();
+}
+</script>
+
+
+<body>
+
+<div data-role="page" id="inicio" class="ui-page">
+
+	<div data-role="header" class="header_logo" data-position="fixed">
+	<img src="img/logos/ccradio.png">
+	</div>
+	
+	<nav>
+		<button class="nav_button" class="ui-btn-left" data-icon="grid"  data-inline="true" data-mini="true" id="menu_button" onclick="loadMenu()">Menú</button>
+		<button class="nav_button" class="ui-btn-right" data-icon="back"  data-inline="true" data-mini="true" id="exit_app" onclick="exitFromApp()">Salir</button>
+		<ul class="menu" style="display:none;">
+			<li><a href='#inicio'>Sobre CCRadio</a></li>
+			<li><a href='#canal1'>Canal 1</a></li>
+			<li><a href='#canal2'>Canal 2</a></li>
+			<li><a href='#canal3'>Canal 3</a></li>
+			<li><a href='#info'>+Info</a></li>
+		</ul>
+	</nav>
+	
+	<div data-role="main" class="ui-content">		
+		<p>CCRadio.es ofrece tres canales con diferentes tipos de música y programaciones diferentes. Queremos ofrecer música Creative Commons que pueda acompañar la actividad diaria tanto de ocio personal como de cualquier local comercial de forma sencilla y gratuita. Los estilos de música emitidos se basan en la música más común en locales comerciales.</p>
+			<ul>
+				<li><strong>Música comercial</strong></li>
+			</ul>
+			<blockquote>
+				<p>Música dinámica y atractiva que conseguirá un ambiente distentido y divertido. Música Pop, Rock suave y algo de música de autor.</p>
+			</blockquote>
+			<ul>
+				<li><strong>Música Disco</strong></li>
+			</ul>
+			<blockquote><p>Música ideal para las tiendas de ropa y con necesidad de crear un ambiente mucho más enérgico.</p>				
+			</blockquote>
+			<ul>
+				<li><strong>Música ambient</strong></li>
+			</ul>
+			<blockquote>
+				<p style="text-align: justify;">Música relajada que permite crear ambiente distendidos y sin estress.</p>
+			</blockquote>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+	Publicidad
+	</div>
+	
+</div>
+
+<div data-role="page" id="canal1" class="ui-page">
+
+	<div data-role="header" class="header_logo" data-position="fixed">
+	Cabecera
+	</div>
+	
+	<div data-role="main" class="ui-content">
+	Contenido
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+	Publicidad
+	</div>
+	
+</div>
+
+<div data-role="page" id="canal2" class="ui-page">
+
+	<div data-role="header" class="header_logo" data-position="fixed">
+	Cabecera
+	</div>
+	
+	<div data-role="main" class="ui-content">
+	Contenido
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+	Publicidad
+	</div>
+	
+</div>
+
+<div data-role="page" id="canal3" class="ui-page">
+
+	<div data-role="header" class="header_logo" data-position="fixed">
+	Cabecera
+	</div>
+	
+	<div data-role="main" class="ui-content">
+	Contenido
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+	Publicidad
+	</div>
+	
+</div>
+
+<div data-role="page" id="info" class="ui-page">
+
+	<div data-role="header" class="header_logo" data-position="fixed">
+	Cabecera
+	</div>
+	
+	<div data-role="main" class="ui-content">
+	Contenido
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+	Publicidad
+	</div>
+	
+</div>
+
+</body>
+</html>
