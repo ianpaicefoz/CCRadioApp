@@ -1,5 +1,5 @@
-var bannerAdUnit = "ca-app-pub-3096329003114803/4364957374";
-var interstitialAdUnit = "ca-app-pub-4906074177432504/1649035673";
+var bannerAdUnit = "ca-app-pub-3096329003114803/7523999379";
+//var interstitialAdUnit = "ca-app-pub-4906074177432504/1649035673";
 var isOverlap = true; //true: overlap, false: split
 var isTest = false;
 
