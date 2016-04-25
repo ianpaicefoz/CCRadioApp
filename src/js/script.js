@@ -42,7 +42,64 @@ $(document).ready( function() {
 	$.support.cors                 = true;
     $.mobile.allowCrossDomainPages = true;
     $.mobile.pushStateEnabled      = false;
+	
+	$.ajax({
+		type: "GET",
+		url: "http://radioserver01.ccradio.es/adminradio/info/info_stream.php?stream=canal_1",
+		dataType: "json",
+        success: function(data) { 
+			//alert(JSON.stringify(data));		
+			//data downloaded so we call parseJSON function 
+			//and pass downloaded data
+			var json = $.parseJSON(JSON.stringify(data));
+			//now json variable contains data in json format
+			//let's display a few items
+			
+			$('#playing_c1').html('<center><img src="'+ json.img_album +'" width="150">' + "<br>"
+								+ 'Cancion: ' + json.song + "<br>"
+								+ 'Album: ' + json.album + "<br>"
+								+ 'Autor: ' + json.autor + "</center>");
+        }
+	});
 
+	$.ajax({
+		type: "GET",
+		url: "http://radioserver01.ccradio.es/adminradio/info/info_stream.php?stream=canal_2",
+		dataType: "json",
+        success: function(data) { 
+			//alert(JSON.stringify(data));		
+			//data downloaded so we call parseJSON function 
+			//and pass downloaded data
+			var json = $.parseJSON(JSON.stringify(data));
+			//now json variable contains data in json format
+			//let's display a few items
+			
+			$('#playing_c2').html('<center><img src="'+ json.img_album +'" width="150">' + "<br>"
+								+ 'Cancion: ' + json.song + "<br>"
+								+ 'Album: ' + json.album + "<br>"
+								+ 'Autor: ' + json.autor + "</center>");
+        }
+	});
+
+	$.ajax({
+		type: "GET",
+		url: "http://radioserver01.ccradio.es/adminradio/info/info_stream.php?stream=canal_3",
+		dataType: "json",
+        success: function(data) { 
+			//alert(JSON.stringify(data));		
+			//data downloaded so we call parseJSON function 
+			//and pass downloaded data
+			var json = $.parseJSON(JSON.stringify(data));
+			//now json variable contains data in json format
+			//let's display a few items
+			
+			$('#playing_c3').html('<center><img src="'+ json.img_album +'" width="150">' + "<br>"
+								+ 'Cancion: ' + json.song + "<br>"
+								+ 'Album: ' + json.album + "<br>"
+								+ 'Autor: ' + json.autor + "</center>");
+        }
+	});	
+	
 	
 /*	var mySwiper = new Swiper ('.swiper-container', {
       // Optional parameters
@@ -57,8 +114,9 @@ function loadMenu(){
 	if($(".menu").css('display') == 'none'){
 		$(".menu").show('slow');
 	}
-	else
+	else{
 		$(".menu").hide('slow');
+	}
 	
 }
 
