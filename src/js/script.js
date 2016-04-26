@@ -99,7 +99,18 @@ $(document).ready( function() {
 								+ 'Autor: ' + json.autor + "</center>");
         }
 	});	
+
+	$(".nav_button").click(function(){
+		if($(".menu").css('display') == 'none'){
+			$(".menu").show();
+		}else{
+			$(".menu").hide();
+		}
+	});
 	
+	$(".link_button").click(function(){
+		$(".menu").hide();
+	});
 	
 /*	var mySwiper = new Swiper ('.swiper-container', {
       // Optional parameters
@@ -109,16 +120,6 @@ $(document).ready( function() {
 */
 
 });
-
-function loadMenu(){
-	if($(".menu").css('display') == 'none'){
-		$(".menu").show('slow');
-	}
-	else{
-		$(".menu").hide('slow');
-	}
-	
-}
 
 function exitFromApp()
 {

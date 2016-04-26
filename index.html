@@ -40,7 +40,7 @@ function onBackKeyDown() {
 	</div>
 	
 	<nav>
-		<button class="nav_button" class="ui-btn-left" data-icon="grid"  data-inline="true" data-mini="true" id="menu_button" onclick="loadMenu()">Menú</button>
+		<button class="nav_button" class="ui-btn-left" data-icon="grid"  data-inline="true" data-mini="true" id="menu_button">Menú</button>
 	</nav>
 		<ul class="menu" style="display:none;">
 			<li><a href='#inicio'>Sobre CCRadio</a></li>
@@ -81,23 +81,23 @@ function onBackKeyDown() {
 	</div>
 	
 	<nav>
-		<button class="nav_button" class="ui-btn-left" data-icon="grid"  data-inline="true" data-mini="true" id="menu_button" onclick="loadMenu()">Menú</button>
+		<button class="nav_button" class="ui-btn-left" data-icon="grid"  data-inline="true" data-mini="true">Menú</button>
 	</nav>
 		<ul class="menu" style="display:none;">
-			<li><a href='#inicio'>Sobre CCRadio</a></li>
-			<li><a href='#canal1'>Canal 1</a></li>
-			<li><a href='#canal2'>Canal 2</a></li>
-			<li><a href='#canal3'>Canal 3</a></li>
-			<li><a href='#info'>+Info</a></li>
+			<li><a class="link_button" href='#inicio'>Sobre CCRadio</a></li>
+			<li><a class="link_button" href='#canal1'>Canal 1</a></li>
+			<li><a class="link_button" href='#canal2'>Canal 2</a></li>
+			<li><a class="link_button" href='#canal3'>Canal 3</a></li>
+			<li><a class="link_button" href='#info'>+Info</a></li>
 		</ul>
 	
 	<div data-role="main" class="ui-content">
-		<div id="playing_c1">
+		<div class="info_music" id="playing_c1">
 
 		</div>
 		<br>
 		<div id='player' style='text-align:center;' style='width:45px;'>
-			<audio controls>
+			<audio controls preload>
 			<source src='http://radioserver01.ccradio.es:8000/canal_1' type='audio/mpeg' />
 			<!--<em>Sorry, your browser doesn't support HTML5 audio.</em>-->
 			</audio>
@@ -113,22 +113,22 @@ function onBackKeyDown() {
 	</div>
 	
 	<nav>
-		<button class="nav_button" class="ui-btn-left" data-icon="grid"  data-inline="true" data-mini="true" id="menu_button" onclick="loadMenu()">Menú</button>
+		<button class="nav_button" class="ui-btn-left" data-icon="grid"  data-inline="true" data-mini="true">Menú</button>
 	</nav>
 		<ul class="menu" style="display:none;">
-			<li><a href='#inicio'>Sobre CCRadio</a></li>
-			<li><a href='#canal1'>Canal 1</a></li>
-			<li><a href='#canal2'>Canal 2</a></li>
-			<li><a href='#canal3'>Canal 3</a></li>
-			<li><a href='#info'>+Info</a></li>
+			<li><a class="link_button" href='#inicio'>Sobre CCRadio</a></li>
+			<li><a class="link_button" href='#canal1'>Canal 1</a></li>
+			<li><a class="link_button" href='#canal2'>Canal 2</a></li>
+			<li><a class="link_button" href='#canal3'>Canal 3</a></li>
+			<li><a class="link_button" href='#info'>+Info</a></li>
 		</ul>
 	
 	<div data-role="main" class="ui-content">
-		<div id="playing_c2">
+		<div class="info_music" id="playing_c2">
 		</div>
 		<br>
 		<div id='player' style='text-align:center;' style='width:45px;'>
-			<audio controls>
+			<audio controls preload>
 			<source src='http://radioserver01.ccradio.es:8000/canal_2' type='audio/mpeg' />
 			<!--<em>Sorry, your browser doesn't support HTML5 audio.</em>-->
 			</audio>
@@ -144,23 +144,23 @@ function onBackKeyDown() {
 	</div>
 	
 	<nav>
-		<button class="nav_button" class="ui-btn-left" data-icon="grid"  data-inline="true" data-mini="true" id="menu_button" onclick="loadMenu()">Menú</button>
+		<button class="nav_button" class="ui-btn-left" data-icon="grid"  data-inline="true" data-mini="true">Menú</button>
 	</nav>
 		<ul class="menu" style="display:none;">
-			<li><a href='#inicio'>Sobre CCRadio</a></li>
-			<li><a href='#canal1'>Canal 1</a></li>
-			<li><a href='#canal2'>Canal 2</a></li>
-			<li><a href='#canal3'>Canal 3</a></li>
-			<li><a href='#info'>+Info</a></li>
+			<li><a class="link_button" href='#inicio'>Sobre CCRadio</a></li>
+			<li><a class="link_button" href='#canal1'>Canal 1</a></li>
+			<li><a class="link_button" href='#canal2'>Canal 2</a></li>
+			<li><a class="link_button" href='#canal3'>Canal 3</a></li>
+			<li><a class="link_button" href='#info'>+Info</a></li>
 		</ul>
 	
 	<div data-role="main" class="ui-content">
-		<div id="playing_c3">
+		<div class="info_music" id="playing_c3">
 
 		</div>
 		<br>
 		<div id='player' style='text-align:center;' style='width:45px;'>
-			<audio controls>
+			<audio controls preload>
 			<source src='http://radioserver01.ccradio.es:8000/canal_3' type='audio/mpeg' />
 			<!--<em>Sorry, your browser doesn't support HTML5 audio.</em>-->
 			</audio>
@@ -176,14 +176,14 @@ function onBackKeyDown() {
 	</div>
 	
 	<nav>
-		<button class="nav_button" class="ui-btn-left" data-icon="grid"  data-inline="true" data-mini="true" id="menu_button" onclick="loadMenu()">Menú</button>
+		<button class="nav_button" class="ui-btn-left" data-icon="grid"  data-inline="true" data-mini="true">Menú</button>
 	</nav>
 		<ul class="menu" style="display:none;">
-			<li><a href='#inicio'>Sobre CCRadio</a></li>
-			<li><a href='#canal1'>Canal 1</a></li>
-			<li><a href='#canal2'>Canal 2</a></li>
-			<li><a href='#canal3'>Canal 3</a></li>
-			<li><a href='#info'>+Info</a></li>
+			<li><a class="link_button" href='#inicio'>Sobre CCRadio</a></li>
+			<li><a class="link_button" href='#canal1'>Canal 1</a></li>
+			<li><a class="link_button" href='#canal2'>Canal 2</a></li>
+			<li><a class="link_button" href='#canal3'>Canal 3</a></li>
+			<li><a class="link_button" href='#info'>+Info</a></li>
 		</ul>
 	
 	<div data-role="main" class="ui-content">
