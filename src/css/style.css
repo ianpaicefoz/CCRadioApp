@@ -103,6 +103,6 @@ li.faq{
 }
 .footer{
 	color:white;
-	overflow-x:auto;
+	overflow-x:scroll;
 	font-size:8px;
 }
