@@ -4,8 +4,9 @@
 	font-size:12px;
 }
 h2{
-	padding-left:15px;
-	border:solid;
+	color:white;
+	font-size:20px;
+	text-align:center;
 }
 a{
 	text-decoration:none;
@@ -60,7 +61,8 @@ p{
 ul.menu{
 	list-style: none;
 	z-index: 100;
-	width:50%;
+	width:65%;
+	height:36%;
 	background:white;
 	position:fixed;
 	padding-left:0px;
@@ -71,7 +73,7 @@ ul.menu li{
 	border-width: 0.5px;
 	border-color:grey;
 	background:#E6E6E6;
-	height:5%;
+	height:12%;
 	padding: 2.5px;
 	padding-left:10px;
 	opacity:1;
@@ -103,6 +105,10 @@ li.faq{
 }
 .footer{
 	color:white;
+	height:100px;
+	width:100%;
 	overflow-x:scroll;
 	font-size:8px;
+	position:relative;
+	float:left;
 }
