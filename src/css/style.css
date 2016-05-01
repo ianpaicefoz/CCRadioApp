@@ -110,6 +110,6 @@ li.faq{
 	overflow-x:scroll;
 	overflow-y:hidden;
 	font-size:8px;
-	position:relative;
+	position:absolute;
 	float:left;
 }
