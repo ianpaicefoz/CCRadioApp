@@ -135,7 +135,7 @@ $(document).ready( function() {
 									+ 'Cancion: ' + c1_data.song + "<br>"
 									+ 'Album: ' + c1_data.album + "<br>"
 									+ 'Autor: ' + c1_data.autor + "</center>");
-				$('#c1_played').append('<div style="float:left;text-align:center;"><img src="'+ c1_data.img_album + '" width="50"><br>'+ c1_data.album +'</div>');								
+				$('#c1_played').append('<div style="float:left;text-align:center;margin-left:5px;"><img src="'+ c1_data.img_album + '" width="50"><br>'+ c1_data.song +'<br>'+ c1_data.album +'</div>');								
 			}
 		});
 		
@@ -148,7 +148,7 @@ $(document).ready( function() {
 									+ 'Cancion: ' + c2_data.song + "<br>"
 									+ 'Album: ' + c2_data.album + "<br>"
 									+ 'Autor: ' + c2_data.autor + "</center>");
-				$('#c2_played').append('<div style="float:left;text-align:center;"><img src="'+ c2_data.img_album + '" width="50"><br>'+ c2_data.album +'</div>');									
+				$('#c2_played').append('<div style="float:left;text-align:center;margin-left:5px;"><img src="'+ c2_data.img_album + '" width="50"><br>'+ c2_data.song +'<br>'+ c2_data.album +'</div>');									
 			}
 		});
 		
@@ -161,7 +161,7 @@ $(document).ready( function() {
 									+ 'Cancion: ' + c3_data.song + "<br>"
 									+ 'Album: ' + c3_data.album + "<br>"
 									+ 'Autor: ' + c3_data.autor + "</center>");
-				$('#c3_played').append('<div style="float:left;text-align:center;"><img src="'+ c3_data.img_album + '" width="50"><br>'+ c3_data.album +'</div>');										
+				$('#c3_played').append('<div style="float:left;text-align:center;margin-left:5px;"><img src="'+ c3_data.img_album + '" width="50"><br>'+ c3_data.song +'<br>'+ c3_data.album +'</div>');										
 			}
 		});
 		
