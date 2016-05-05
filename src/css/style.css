@@ -107,8 +107,6 @@ li.faq{
 	color:white;
 	height:100px;
 	width:100%;
-	overflow-x:scroll;
-	overflow-y:hidden;
 	font-size:8px;
 	position:absolute;
 	float:left;
