@@ -52,9 +52,9 @@ $(document).ready( function() {
 	
 	$(".nav_button").click(function(){
 		if($(".menu").css('display') == 'none'){
-			$(".menu").show();
+			$(".menu").animate({width:'toggle'},350);
 		}else{
-			$(".menu").hide();
+			$(".menu").animate({width:'toggle'},350);
 		}
 	});
 	

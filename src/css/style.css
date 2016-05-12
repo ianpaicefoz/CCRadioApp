@@ -52,6 +52,9 @@ p{
 	background: none;
 	text-align: center;
 	position:fixed;
+	padding-right:auto;
+	padding-left:auto;
+	padding-top:1%;
 	z-index: 100;
 }
 .link_button{
@@ -95,13 +98,13 @@ li.faq{
 	color:white;
 	margin-top:10%;
 	overflow-y:scroll;
-	height:350px;
+	height:70%;
 	padding:10px;
 }
 .info_music
 {
 	color:white;
-	margin-top:15%;
+	margin-top:10%;
 }
 .footer{
 	color:white;
