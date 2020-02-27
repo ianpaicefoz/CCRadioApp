@@ -37,6 +37,7 @@
     <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
     <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
     <preference name="android-minSdkVersion"      />              <!-- android: MIN SDK version supported on the target device. MAX version is blank-->	
+	<preference name="android-targetSdkVersion"   value="27"/>
 	<preference name="android-build-tool" value="gradle" /> 
     <!--
         Define a specific version of PhoneGap to build into your app.-->
